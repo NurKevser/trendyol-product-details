@@ -4,6 +4,7 @@ import Button from "./Button";
 import Slider from "react-slick";
 import ProductImagesData from "./ProductImagesData";
 import { PreviewProduct, BaseProduct } from './Settings';
+import ReactTooltip from "react-tooltip";
 
 const ProductDetails = () => {
   
@@ -65,8 +66,11 @@ const ProductDetails = () => {
               <div className="fav">
                 <i
                   className={isFav ? "fas fa-heart" : "far fa-heart"}
-                  onClick={handleFav}
+                  onClick={handleFav} data-tip data-for="registerTip"
                 ></i>
+                <ReactTooltip id="registerTip" place="bottom" effect="solid" type="light">
+        Favorilere Ekle
+      </ReactTooltip>
               </div>
             </div>
             <div className="sub-text">

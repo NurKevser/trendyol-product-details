@@ -152,6 +152,11 @@
           cursor: pointer;
           color: $orange;
         }
+        #registerTip{
+          border: 1px solid $border;
+          border-radius: .4rem;
+          color: $orange;
+        }
       }
       .sub-text {
         display: flex;
