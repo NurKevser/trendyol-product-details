@@ -2,50 +2,40 @@
 @import "./mixin.scss";
 
 .product-detail {
-  
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
-
   .container {
     border: 1px solid $border;
     border-radius: 0.4rem;
     box-shadow: 0.7px 0.7px 4px 0 $border;
-    width: 50%;
-    height: 80vh;
-    padding: 0.6rem;
+    width: 55%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    margin: 1rem;
+    padding: 1rem;
 
     .gallery-container {
       display: flex;
-      justify-content: center;
       flex-direction: column;
-      .img-base {
-        width: 100%;
-        height: 68vh;
+      justify-content: center;
+      max-width: 23rem;
+
+      .product-image-container {
         border: 1px solid $border;
         border-radius: 0.4rem;
-        margin-bottom: 0.4rem;
+        cursor: pointer;
       }
       .product-slide-container {
-        display: flex;
-        justify-content: center;
-
-        flex-direction: row;
+        cursor: pointer;
         .img-slide {
+          max-width: 3rem;
+          height: fit-content;
           border: 1px solid $border;
-          border-radius: 4px;
-          width: 10%;
-          height: 6.5vh;
-          margin: 0.5rem;
-
+          border-radius: 0.4rem;
+          margin: 1rem;
+          
           &:hover,
           :active,
           :focus {
@@ -80,7 +70,7 @@
         a {
           text-decoration: none;
           color: #4d8ee1;
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
@@ -136,7 +126,7 @@
         .far {
           display: flex;
           border: 1px solid $border;
-    box-shadow: 0.7px 0.7px 4px 0 $border;
+          box-shadow: 0.7px 0.7px 4px 0 $border;
 
           border-radius: 0.3rem;
           font-size: 1.5rem;
@@ -190,7 +180,7 @@
       }
     }
     .features {
-      border: 0.5px solid rgba(0,0,0,0.3);
+      border: 0.5px solid rgba(0, 0, 0, 0.3);
       background-color: transparent;
       color: black;
       font-size: smaller;

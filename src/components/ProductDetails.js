@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "../styles/productDetails.scss";
 import Button from "./Button";
 import Slider from "react-slick";
+import ProductImagesData from "./ProductImagesData";
+import { PreviewProduct, BaseProduct } from './Settings';
 
-
-const ProductDetails = () => {  
-  const [isFav, setFav] = useState(false)
+const ProductDetails = () => {
+  
+  const [isFav, setFav] = useState(false);
   const handleFav = () => {
     setFav(!isFav);
   };
@@ -14,35 +16,21 @@ const ProductDetails = () => {
       <main className="product-detail">
         <div className="container">
           <div className="gallery-container">
-          <Slider><div className="product-image-container">
-              <img
-                src="..\..\images\productImages\product-img-1.jpg"
-                alt="product-img-1"
-                className="img-base"
-              />
-            </div></Slider>
-            <div className="product-slide-container">
-              <img
-                src="..\..\images\productImages\product-img-2.jpg"
-                alt="img2"
-                className="img-slide"
-              />
-              <img
-                src="..\..\images\productImages\product-img-1.jpg"
-                alt="img1"
-                className="img-slide"
-              />
-              <img
-                src="..\..\images\productImages\product-img-4.jpg"
-                alt="img4"
-                className="img-slide"
-              />
-              <img
-                src="..\..\images\productImages\product-img-3.jpg"
-                alt="img3"
-                className="img-slide"
-              />
-            </div>
+            <Slider {...BaseProduct} className="product-image-container">
+              {ProductImagesData.map((product, index) => {
+                return (
+                  <img src={product.image} alt="img" className="img-base" />
+                );
+              })}
+            </Slider>
+
+            <Slider {...PreviewProduct} className="product-slide-container">
+              {ProductImagesData.map((product, index) => {
+                return (
+                  <img src={product.image} alt="img" className="img-slide" />
+                );
+              })}
+            </Slider>
           </div>
           <div className="product-description">
             <div className="product-title">
@@ -52,7 +40,7 @@ const ProductDetails = () => {
               <span> Tribe 8'li Pastel Boya Kalemi 7-0122</span>
             </div>
             <div className="supplier-text">
-              <span> Satıcı : </span>
+              <span> Satıcı: </span>
               <a href="#top"> Isabel Abbey</a>
             </div>
             <div className="ratings">
@@ -75,16 +63,19 @@ const ProductDetails = () => {
             <div className="reaction">
               <Button className="add-to-basket">Sepete Ekle</Button>
               <div className="fav">
-                <i className={isFav ? "fas fa-heart" : "far fa-heart"} onClick={handleFav}></i>
+                <i
+                  className={isFav ? "fas fa-heart" : "far fa-heart"}
+                  onClick={handleFav}
+                ></i>
               </div>
             </div>
             <div className="sub-text">
               <div className="delivery-date">
-                <span>Tahmini Kargoya Teslim:</span> 2 gün içinde
+                <span>Tahmini Kargoya Teslim: </span> 2 gün içinde
               </div>
               <div className="fav-ratings">
                 <i class="far fa-heart"></i>
-                  7831 favori
+                7831 favori
               </div>
             </div>
             <hr className="horizontal"></hr>
