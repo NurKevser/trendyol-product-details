@@ -3,7 +3,6 @@ import { SimilarPro } from "./ProductsData";
 import Slider from "react-slick";
 import { SimilarProSet } from "./Settings";
 import "../styles/similarProduct.scss";
-import ReactTooltip from "react-tooltip";
 
 const SimilarProduct = () => {
   return (

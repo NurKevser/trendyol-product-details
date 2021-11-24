@@ -20,9 +20,9 @@ export const SimilarPro = [
 
         name: 'Tekrar Kullanılabilen Çiftlik Kabartmalı Çıkartma',
 
-        supplier: 'Melisse&Doug',
+        supplier: 'Melissa & Doug',
 
-        price: '89,90 Tl'
+        price: '89,90 TL'
     },
     {
         image: 'https://cdn.dsmcdn.com/mnresize/1200/1800/ty119/product/media/images/20210524/18/91219964/68733806/1/1_org_zoom.jpg',
@@ -113,5 +113,32 @@ export const SimilarPro = [
 
         price: '211,51 TL'
     },
+]
+
+export const OtherSuppliers = [
+    {
+        name: 'MinioKids',
+        rate: '9.3',
+        deliveryDate: '5 gün içinde',
+        ship: 'Kargo Bedava',
+        price: '155,80 TL',
+        id: 1
+    },
+    {
+        name: 'İmirket',
+        rate: '8.1',
+        deliveryDate: '2 gün içinde',
+        ship: 'Kargo Bedava',
+        price: '135,90 TL',
+        id: 2
+    },
+    {
+        name: 'djeco',
+        rate: '7.9',
+        deliveryDate: '1 hafta içinde',
+        ship: 'Kargo Bedava',
+        price: '142,40 TL',
+        id: 3
+    }
 ]
 

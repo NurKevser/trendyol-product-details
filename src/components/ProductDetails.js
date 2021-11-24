@@ -6,6 +6,10 @@ import { ProductImages } from "./ProductsData";
 import { PreviewProduct, BaseProduct } from "./Settings";
 import ReactTooltip from "react-tooltip";
 import SimilarProduct from "./SimilarProduct";
+import OtherSupplier  from "./OtherSupplier";
+import { OtherSuppliers } from "./ProductsData";
+
+
 
 const ProductDetails = () => {
   const [isFav, setFav] = useState(false);
@@ -102,6 +106,8 @@ const ProductDetails = () => {
         <SimilarProduct />
         <h3>Bu Ürünü Alanlar Bunları da Aldı</h3>
         <SimilarProduct />
+        <h2>Ürünün Diğer Satıcıları({OtherSuppliers.length})</h2>
+        <OtherSupplier/>
       </main>
     </>
   );
