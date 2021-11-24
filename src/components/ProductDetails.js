@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import "../styles/productDetails.scss";
 import Button from "./Button";
 import Slider from "react-slick";
-import ProductImagesData from "./ProductImagesData";
-import { PreviewProduct, BaseProduct } from './Settings';
+import { ProductImages } from "./ProductsData";
+import { PreviewProduct, BaseProduct } from "./Settings";
 import ReactTooltip from "react-tooltip";
 
 const ProductDetails = () => {
-  
   const [isFav, setFav] = useState(false);
   const handleFav = () => {
     setFav(!isFav);
@@ -18,7 +17,7 @@ const ProductDetails = () => {
         <div className="container">
           <div className="gallery-container">
             <Slider {...BaseProduct} className="product-image-container">
-              {ProductImagesData.map((product, index) => {
+              {ProductImages.map((product, index) => {
                 return (
                   <img src={product.image} alt="img" className="img-base" />
                 );
@@ -26,7 +25,7 @@ const ProductDetails = () => {
             </Slider>
 
             <Slider {...PreviewProduct} className="product-slide-container">
-              {ProductImagesData.map((product, index) => {
+              {ProductImages.map((product, index) => {
                 return (
                   <img src={product.image} alt="img" className="img-slide" />
                 );
@@ -66,11 +65,18 @@ const ProductDetails = () => {
               <div className="fav">
                 <i
                   className={isFav ? "fas fa-heart" : "far fa-heart"}
-                  onClick={handleFav} data-tip data-for="registerTip"
+                  onClick={handleFav}
+                  data-tip
+                  data-for="registerTip"
                 ></i>
-                <ReactTooltip id="registerTip" place="bottom" effect="solid" type="light">
-        Favorilere Ekle
-      </ReactTooltip>
+                <ReactTooltip
+                  id="registerTip"
+                  place="bottom"
+                  effect="solid"
+                  type="light"
+                >
+                  Favorilere Ekle
+                </ReactTooltip>
               </div>
             </div>
             <div className="sub-text">

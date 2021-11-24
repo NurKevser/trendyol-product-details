@@ -14,3 +14,11 @@ export const PreviewProduct = {
     slidesToScroll: 1,
   };
 
+  export const SimilarProSet = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 3,
+  }
+
