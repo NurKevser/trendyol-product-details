@@ -1,0 +1,45 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.similar-product {
+  width: 57%;
+  height: auto;
+  text-align: start;
+  .slider {
+    cursor: pointer;
+  }
+
+  &-image {
+    border: 1px solid $border;
+    border-radius: 0.4rem;
+    max-width: 90%;
+  }
+  &-name {
+    font-size: 0.65rem;
+    color: $sub-text;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px; /* fallback */
+    max-height: 32px; /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    &-name::after {
+      content: "...";
+      position: absolute;
+      right: -12px;
+      bottom: 4px;
+    }
+
+    span {
+      font-weight: 600;
+      color: black;
+    }
+  }
+  &-price {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $orange;
+  }
+}

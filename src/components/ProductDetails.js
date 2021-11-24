@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { ProductImages } from "./ProductsData";
 import { PreviewProduct, BaseProduct } from "./Settings";
 import ReactTooltip from "react-tooltip";
+import SimilarProduct from "./SimilarProduct";
 
 const ProductDetails = () => {
   const [isFav, setFav] = useState(false);
@@ -96,6 +97,11 @@ const ProductDetails = () => {
             <Button className="product features">ÜRÜNÜN TÜM ÖZELLİKLERİ</Button>
           </div>
         </div>
+
+        <h3>Benzer Ürünler</h3>
+        <SimilarProduct />
+        <h3>Bu Ürünü Alanlar Bunları da Aldı</h3>
+        <SimilarProduct />
       </main>
     </>
   );
