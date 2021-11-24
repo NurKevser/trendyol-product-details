@@ -8,6 +8,7 @@ import ReactTooltip from "react-tooltip";
 import SimilarProduct from "./SimilarProduct";
 import OtherSupplier  from "./OtherSupplier";
 import { OtherSuppliers } from "./ProductsData";
+import ProductEvaluation from "./ProductEvaluation";
 
 
 
@@ -66,7 +67,7 @@ const ProductDetails = () => {
             </div>
             <hr className="horizontal"></hr>
             <div className="reaction">
-              <Button className="add-to-basket">Sepete Ekle</Button>
+              <button className="add-to-basket">Sepete Ekle</button>
               <div className="fav">
                 <i
                   className={isFav ? "fas fa-heart" : "far fa-heart"}
@@ -106,8 +107,11 @@ const ProductDetails = () => {
         <SimilarProduct />
         <h3>Bu Ürünü Alanlar Bunları da Aldı</h3>
         <SimilarProduct />
-        <h2>Ürünün Diğer Satıcıları({OtherSuppliers.length})</h2>
+        <h3>Ürünün Diğer Satıcıları({OtherSuppliers.length})</h3>
         <OtherSupplier/>
+        <h3>Ürün Değerlendirmeleri</h3>
+        <ProductEvaluation/>
+        <i class="far fa-comment-alt"></i>
       </main>
     </>
   );

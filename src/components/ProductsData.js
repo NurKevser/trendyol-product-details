@@ -142,3 +142,61 @@ export const OtherSuppliers = [
     }
 ]
 
+export const Evaluation = [
+    {
+        rate: [
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="far fa-star"></i>
+        ],
+        comment: 'Çok güzel yumuşacık ve uygulaması kolay. Uçları kalın Mandala gibi resimler yapılmaz.',
+        name:'**** ****',
+        date: '18 Kasım 2021',
+        supplier:'Isabel Abbey',
+        orderState:'Ürünü satın aldı',
+    },
+    {
+        rate: [
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>
+        ],
+        comment: 'çok guzel boyalar @ısabellyden aldim tavsiye uzerine memnunum',
+        name:'Y** Ç**',
+        date: '3 Kasım 2021',
+        supplier:'Isabel Abbey',
+        orderState:'Ürünü satın aldı',
+    },
+    {
+        rate: [
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>
+        ],
+        comment: 'Harika boya kalemleri 👍',
+        name:'E** Y**',
+        date: '31 Ağustos 2021',
+        supplier:'Isabel Abbey',
+        orderState:'Ürünü satın aldı',
+    },
+    {
+        rate: [
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>,
+            <i class="fas fa-star"></i>
+        ],
+        comment: 'renkleride super yumusakligida bayildimmmm',
+        name:'e** g** c**',
+        date: '10 Ekim 2020',
+        supplier:'Isabel Abbey',
+        orderState:'Ürünü satın aldı',
+    },
+]

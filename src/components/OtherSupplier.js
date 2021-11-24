@@ -1,6 +1,5 @@
 import React from "react";
 import { OtherSuppliers } from "./ProductsData";
-import Button from "./Button";
 import "../styles/otherSupplier.scss";
 
 const OtherSupplier = () => {
