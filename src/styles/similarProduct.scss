@@ -2,7 +2,8 @@
 @import "./mixin.scss";
 
 .similar-product {
-  width: 57%;
+  
+  max-width: 60%;
   height: auto;
   text-align: start;
   .slider {
@@ -12,7 +13,7 @@
   &-image {
     border: 1px solid $border;
     border-radius: 0.4rem;
-    max-width: 90%;
+    width: 90%;
   }
   &-name {
     font-size: 0.65rem;
