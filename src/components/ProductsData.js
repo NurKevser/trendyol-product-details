@@ -200,3 +200,16 @@ export const Evaluation = [
         orderState:'Ürünü satın aldı',
     },
 ]
+
+export const ProInfo = [
+    {
+        image: 'https://cdn.dsmcdn.com/mnresize/1200/1800/ty15/product/media/images/20201009/13/14475019/68733618/1/1_org_zoom.jpg',
+        title: "Tiger Tribe 8'li Pastel Boya Kalemi",
+        infoDetail: <ul>
+            <li>Ürün Kutu Ölçüleri: 13,5x17x2 cm 3 yaş ve üzeri çocuklar için uygundur. 8 boyama kaleminden oluşur. İpeksi Boya Kalemleri, bir mum boya tanımınızı yeniden düşünmenizi sağlayacaktır… bu bir mum boya mı? Pastel? Ya da sulu boya? İpeksi Boya Kalemleri, pastel gibi pürüzsüz bir şekilde pırıl pırıl devam eder (renkler standart boyalara göre daha canlıdır) ve görünüşünü değiştirmek için, sadece bir su rengi efekti oluşturmak için boya fırçasıyla su ekleyin. İpek Boya Kalemleri toksik değildir, kokusuzdur ve suda çözünür, böylece lekeler kolayca yıkanır. Ekstra eğlenceli kısım, her bir boya kalemi bükümlü bir tüple (annemin rujun da olduğu gibi) geliyor, bu yüzden ezilme yok.</li>
+            <li>Bu üründen en fazla 10 adet sipariş verilebilir. 10 adetin üzerindeki siparişleri Trendyol iptal etme hakkını saklı tutar.</li>
+            <li>Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.</li>
+            <li>İncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.</li>
+        </ul>
+    }
+]

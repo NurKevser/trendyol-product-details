@@ -9,6 +9,7 @@ import SimilarProduct from "./SimilarProduct";
 import OtherSupplier  from "./OtherSupplier";
 import { OtherSuppliers } from "./ProductsData";
 import ProductEvaluation from "./ProductEvaluation";
+import ProductInfo from "./ProductInfo";
 
 
 
@@ -111,6 +112,8 @@ const ProductDetails = () => {
         <OtherSupplier/>
         <h3>Ürün Değerlendirmeleri</h3>
         <ProductEvaluation/>
+        <h3>Ürün Bilgileri</h3>
+        <ProductInfo/>
         <i class="far fa-comment-alt"></i>
       </main>
     </>

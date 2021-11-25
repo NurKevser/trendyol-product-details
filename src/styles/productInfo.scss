@@ -1,0 +1,45 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.pro-info{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+  &-container{
+    border: 1px solid $border;
+    border-radius: 0.4rem;
+    box-shadow: 0.7px 0.7px 4px 0 $border;
+    width: 53%;
+    height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+      padding: 1rem;
+      .img{
+          max-width: 40%;
+          height: 38vh;
+      }
+      .info{
+          display: flex;
+          flex-direction: column;
+          justify-content:flex-start;
+          align-items: flex-start;
+          text-align: start;
+          &-title{
+              font-size: .95rem;
+            font-weight: 600;
+        }
+          &-detail{
+              margin-left: -1rem;
+              font-size: .8rem;
+              color: $sub-text;
+              ul li::marker {
+                color: #ddd;
+              }
+          }
+      }
+
+  }
+}
