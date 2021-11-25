@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Evaluation } from "./ProductsData";
 import "../styles/productEvaluation.scss";
 
 const ProductEvaluation = () => {
+  const [isFav, setFav] = useState(false);
+  const handleFav = () => {
+    setFav(!isFav);
+  };
   return (
     <div className="evaluation">
       <div className="rating">
@@ -35,9 +39,9 @@ const ProductEvaluation = () => {
                 <span className="state">{eva.orderState}</span>
               </div>
               <div className="evaluation-card--second-part_right">
-                  <div className="comment-fav">
+                  <div className={isFav ? "comment-fav1" : "comment-fav" } onClick={handleFav}>
               <i class="fas fa-thumbs-up"></i> 
-                <div className="comment">
+                <div className="comment" >
                 Yorumu Beğen (0)
                 </div>
 

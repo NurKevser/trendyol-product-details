@@ -72,6 +72,13 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          .comment-fav1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: .5rem;
+            color: #12c247;
+          }
           .comment-fav{
             display: flex;
             justify-content: center;
