@@ -4,6 +4,11 @@ import "../styles/productEvaluation.scss";
 
 const ProductEvaluation = () => {
   const [isFav, setFav] = useState(false);
+  const [visible, setVisible] = useState(2)
+
+  const showMoreItems = () => {
+    setVisible((prevValue) => prevValue + Evaluation.length - 2 )
+  }
   const handleFav = () => {
     setFav(!isFav);
   };
@@ -22,7 +27,7 @@ const ProductEvaluation = () => {
         <div className="rating-second">14 Değerlendirme | 10 Yorum</div>
       </div>
       <hr className="horizontal1"></hr>
-      {Evaluation.map((eva, index) => {
+      {Evaluation.slice(0, visible).map((eva, index) => {
         return (
           <div className="evaluation-card">
             <div className="evaluation-card--first-part">
@@ -53,7 +58,7 @@ const ProductEvaluation = () => {
           </div>
         );
       })}
-      <button className="show-more-btn">DAHA FAZLA YORUM GÖSTER</button>
+      <button className="show-more-btn" onClick={showMoreItems}>DAHA FAZLA YORUM GÖSTER</button>
     </div>
   );
 };

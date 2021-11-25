@@ -3,7 +3,7 @@ export const SampleNextArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#ddd" }}
+      style={{ ...style, display: "block", background: "#ddd"}}
       onClick={onClick}
     />
   );
@@ -14,7 +14,7 @@ export const SamplePrevArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#ddd" }}
+      style={{ ...style, display: "block", background: "#ddd"}}
       onClick={onClick}
     />
   );
